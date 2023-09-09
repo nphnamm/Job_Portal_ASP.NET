@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\JobHuntDbModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\JobHuntDbModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

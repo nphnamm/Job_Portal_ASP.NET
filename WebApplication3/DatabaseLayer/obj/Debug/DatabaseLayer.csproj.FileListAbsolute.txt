@@ -10,3 +10,15 @@ D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFrame
 D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.xml
 D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\DatabaseLayer.dll.config
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.dll
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.xml
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.AssemblyReference.cache
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+D:\Github\ASP.Net\Job_Portal_ASP.NET\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.pdb

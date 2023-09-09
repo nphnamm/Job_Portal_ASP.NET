@@ -4,41 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="91986fc1c34b4438a866155bfd49d74a" Name="Diagram1" ZoomLevel="34">
-        <EntityTypeShape EntityType="JobshuntDbModel.AccountStatusTable" Width="1.5" PointX="1.5" PointY="13.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.CertificateTable" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.CompanyTable" Width="1.5" PointX="6.75" PointY="21" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.CountryTable" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.EducationTable" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.EmployeeTable" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobApplyStatusTable" Width="1.5" PointX="9" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobApplyTable" Width="1.5" PointX="11.25" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobCategoryTable" Width="1.5" PointX="3.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobNatureTable" Width="1.5" PointX="6.75" PointY="24.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobRequirementDetailTable" Width="1.5" PointX="9" PointY="30.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobRequirementsTable" Width="1.5" PointX="6.75" PointY="27" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.JobStatusTable" Width="1.5" PointX="6.75" PointY="29.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.LanguageTable" Width="1.5" PointX="8.25" PointY="14.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.PostJobTable" Width="1.5" PointX="9" PointY="23.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.SkillTable" Width="1.5" PointX="8.25" PointY="16.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.UserTable" Width="1.5" PointX="3.75" PointY="13.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.UserTypeTable" Width="1.5" PointX="1.5" PointY="15.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="JobshuntDbModel.WorkExpericenTable" Width="1.5" PointX="3" PointY="22" IsExpanded="true" />
-        <AssociationConnector Association="JobshuntDbModel.FK_UserTable_AccountStatusTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_CertificateTable_EmployeeTable" ManuallyRouted="false" />
+      <Diagram DiagramId="32ba6453ee474eeb8eb121f9beb6e57a" Name="Diagram1">
+        <EntityTypeShape EntityType="JobshuntDbModel.CompanyTable" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.JobCategoryTable" Width="1.5" PointX="3.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.JobNatureTable" Width="1.5" PointX="3.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.JobRequirementDetailTable" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.JobRequirementsTable" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.JobStatusTable" Width="1.5" PointX="3.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.PostJobTable" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.UserTable" Width="1.5" PointX="1.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="JobshuntDbModel.UserTypeTable" Width="1.5" PointX="1.5" PointY="12.625" IsExpanded="true" />
         <AssociationConnector Association="JobshuntDbModel.FK_CompanyTable_UserTable" ManuallyRouted="false" />
         <AssociationConnector Association="JobshuntDbModel.FK_PostJobTable_CompanyTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_EducationTable_CountryTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_EmployeeTable_CountryTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_WorkExpericenTable_CountryTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_EducationTable_EmployeeTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_EmployeeTable_JobCategoryTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_EmployeeTable_UserTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_JobApplyTable_EmployeeTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_LanguageTable_EmployeeTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_SkillTable_EmployeeTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_JobApplyTable_JobApplyStatusTable" ManuallyRouted="false" />
-        <AssociationConnector Association="JobshuntDbModel.FK_JobApplyTable_PostJobTable" ManuallyRouted="false" />
         <AssociationConnector Association="JobshuntDbModel.FK_PostJobTable_JobCategoryTable" ManuallyRouted="false" />
         <AssociationConnector Association="JobshuntDbModel.FK_PostJobTable_JobNatureTable" ManuallyRouted="false" />
         <AssociationConnector Association="JobshuntDbModel.FK_JobRequirementDetailTable_JobRequirementsTable" ManuallyRouted="false" />
