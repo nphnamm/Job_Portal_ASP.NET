@@ -1,0 +1,12 @@
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.AssemblyReference.cache
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\DatabaseLayer.dll.config
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.dll
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.xml
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\C_sharp\JobPortal_2\WebApplication3\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
