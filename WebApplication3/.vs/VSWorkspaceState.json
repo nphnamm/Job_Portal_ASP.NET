@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
+    "",
     "\\WebApplication3",
-    "\\WebApplication3\\Views",
-    "\\WebApplication3\\Views\\JobCategoryTables"
+    "\\WebApplication3\\Controllers"
   ],
+  "SelectedNode": "\\WebApplication3\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,163 @@
+﻿@model IEnumerable<DatabaseLayer.PostJobTable>
+
+@{
+    ViewBag.Title = "CompanyJobsList";
+}
+
+<h2>All Job Posts</h2>
+
+<p>
+    @Html.ActionLink("Add Job Post", "PostJob", null, new { @class = "btn btn-default", @style = "float:right;" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </th>
+        
+        <th>
+            Min-Max Salary 
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Vacancey
+        </th>
+        <th>
+            Post Date
+        </th>
+        <th>
+            Last Date
+        </th>
+     
+        <th>
+            @Html.DisplayNameFor(model => model.WebUrl)
+        </th>
+
+        <th>
+            Category
+        </th>
+        <th>
+            Nature
+        </th>
+        <th>
+            Status
+        </th>
+   
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobTitle)
+            </td>
+       
+            <td>
+                @item.MinSalary - @item.MixSalary$
+            </td>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vacancey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationLastDate)
+            </td>
+    
+         
+            <td>
+                @Html.DisplayFor(modelItem => item.WebUrl)
+            </td>
+      
+            <td>
+                @Html.DisplayFor(modelItem => item.JobCategoryTable.JobCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobNatureTable.JobNature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobStatusTable.JobStatus)
+            </td>
+         
+            <td>
+                @Html.ActionLink("View", "JobDetails", new { id = item.PostJobID }, new { @class = "genric-btn success  medium radius", @style = " min-width:120px" })
+                @Html.ActionLink("+Details", "AddRequirements", new { id = item.PostJobID }, new { @class = "genric-btn primary medium radius", @style = "min-width:120px ;margin-top:10px " })
+
+                @Html.ActionLink("Delete", "DeleteJobPost", new { id = item.PostJobID }, new { @class = "genric-btn danger medium radius", @style = "margin-top:10px; min-width:120px" })
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+
+
+
+
+
+@*@model IEnumerable<DatabaseLayer.PostJobTable>
+
+@{
+    ViewBag.Title = "Posts";
+}
+
+<div class="section-top-border col-md-12">
+    <h3 class="mb-30">
+        All Job Posts     @Html.ActionLink("Add Job Post", "PostJob", null, new { @class = "btn btn-default", @style = "float:right;" })
+    </h3>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="country">Job Title</div>
+                <div class="country">Job Description</div>
+                <div class="country">Min Salary</div>
+                <div class="country">Max Salary</div>
+                <div class="country">Location</div>
+                <div class="country">Vacancey</div>
+                <div class="country">Post Date</div>
+                <div class="country">Last Date</div>
+                <div class="country">Redirect Url</div>
+                <div class="country">Job Category</div>
+                <div class="country">Job Nature</div>
+                <div class="country">Status</div>
+
+
+            </div>
+            @foreach (var item in Model)
+            {
+                <div class="table-row">
+                    <div class="serial">@Html.DisplayFor(modelItem => item.PostJobID)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.JobTitle)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.JobDescription)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.MinSalary)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.MixSalary)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.Location)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.Vacancey)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.PostDate)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.ApplicationLastDate)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.WebUrl)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.JobCategoryTable.JobCategory)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.JobNatureTable.JobNature)</div>
+                    <div class="country">@Html.DisplayFor(modelItem => item.JobStatusTable.JobStatus)</div>
+
+
+
+                </div>
+
+            }
+
+        </div>
+    </div>
+</div>*@

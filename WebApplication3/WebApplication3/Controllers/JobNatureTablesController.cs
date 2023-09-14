@@ -17,12 +17,22 @@ namespace WebApplication3.Controllers
         // GET: JobNatureTables
         public ActionResult Index()
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             return View(db.JobNatureTables.ToList());
         }
 
         // GET: JobNatureTables/Details/5
         public ActionResult Details(int? id)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -48,6 +58,11 @@ namespace WebApplication3.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "JobNatureID,JobNature")] JobNatureTable jobNatureTable)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (ModelState.IsValid)
             {
                 db.JobNatureTables.Add(jobNatureTable);
@@ -61,6 +76,11 @@ namespace WebApplication3.Controllers
         // GET: JobNatureTables/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -80,6 +100,11 @@ namespace WebApplication3.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "JobNatureID,JobNature")] JobNatureTable jobNatureTable)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (ModelState.IsValid)
             {
                 db.Entry(jobNatureTable).State = EntityState.Modified;

@@ -227,6 +227,7 @@
     <Content Include="Content\assets\js\jquery.ajaxchimp.min.js" />
     <Content Include="Content\assets\js\jquery.form.js" />
     <Content Include="Content\assets\js\jquery.magnific-popup.js" />
+    <Content Include="Content\assets\js\jquery-3.3.1.min.js" />
     <Content Include="Content\assets\js\jquery.nice-select.min.js" />
     <Content Include="Content\assets\js\jquery.paroller.min.js" />
     <Content Include="Content\assets\js\jquery.scrollUp.min.js" />
@@ -274,12 +275,22 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JobCategoryTablesController.cs" />
+    <Compile Include="Controllers\JobController.cs" />
     <Compile Include="Controllers\JobNatureTablesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Forgot\Email.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CompanyMV.cs" />
+    <Compile Include="Models\FilterJobMV.cs" />
+    <Compile Include="Models\ForgotPasswordMV.cs" />
+    <Compile Include="Models\JobRequirementDetailMV.cs" />
+    <Compile Include="Models\JobRequirementsMV.cs" />
+    <Compile Include="Models\JobRequirmentsMV.cs" />
+    <Compile Include="Models\PostJobDetailMV.cs" />
+    <Compile Include="Models\PostJobMV.cs" />
+    <Compile Include="Models\UserLoginMV.cs" />
     <Compile Include="Models\UserMV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -365,6 +376,15 @@
     <Content Include="Views\JobNatureTables\Edit.cshtml" />
     <Content Include="Views\JobNatureTables\Index.cshtml" />
     <Content Include="Views\User\NewUser.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\Job\PostJob.cshtml" />
+    <Content Include="Views\User\AllUsers.cshtml" />
+    <Content Include="Views\Job\CompanyJobsList.cshtml" />
+    <Content Include="Views\Job\AddRequirements.cshtml" />
+    <Content Include="Views\Job\JobDetails.cshtml" />
+    <Content Include="Views\Job\ALlCompanyPendingJobs.cshtml" />
+    <Content Include="Views\Job\FilterJob.cshtml" />
+    <Content Include="Views\User\Forgot.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

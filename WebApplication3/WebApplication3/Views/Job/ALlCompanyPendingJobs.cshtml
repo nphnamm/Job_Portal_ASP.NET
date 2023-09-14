@@ -1,0 +1,100 @@
+﻿@model IEnumerable<DatabaseLayer.PostJobTable>
+
+@{
+    ViewBag.Title = "ALl Company Pending Jobs ";
+}
+
+<h2>ALl Company Pending Jobs</h2>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </th>
+
+        <th>
+            Min-Max Salary
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Vacancey
+        </th>
+        <th>
+            Post Date
+        </th>
+        <th>
+            Last Date
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.WebUrl)
+        </th>
+
+        <th>
+            Category
+        </th>
+        <th>
+            Nature
+        </th>
+        <th>
+            Status
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobTitle)
+            </td>
+
+            <td>
+                @item.MinSalary - @item.MixSalary$
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vacancey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationLastDate)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.WebUrl)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.JobCategoryTable.JobCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobNatureTable.JobNature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobStatusTable.JobStatus)
+            </td>
+
+            <td>
+                @Html.ActionLink("View", "JobDetails", new { id = item.PostJobID }, new { @class = "genric-btn success  medium radius", @style = " min-width:120px" })
+                @Html.ActionLink("Approved", "ApprovedPost", new { id = item.PostJobID }, new { @class = "genric-btn primary medium radius", @style = "min-width:120px ;margin-top:10px " })
+                @Html.ActionLink("Cancel", "CanceledPost", new { id = item.PostJobID }, new { @class = "genric-btn primary medium radius", @style = "min-width:120px ;margin-top:10px " })
+
+                @Html.ActionLink("Delete", "DeleteJobPost", new { id = item.PostJobID }, new { @class = "genric-btn danger medium radius", @style = "margin-top:10px; min-width:120px" })
+
+            </td>
+        </tr>
+    }
+
+</table>

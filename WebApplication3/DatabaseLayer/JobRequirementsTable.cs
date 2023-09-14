@@ -18,16 +18,12 @@ namespace DatabaseLayer
         public JobRequirementsTable()
         {
             this.JobRequirementDetailTables = new HashSet<JobRequirementDetailTable>();
-            this.PostJobTables = new HashSet<PostJobTable>();
         }
     
         public int JobRequirementID { get; set; }
         public string JobRequirementTitle { get; set; }
-        public int PostJobID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<JobRequirementDetailTable> JobRequirementDetailTables { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PostJobTable> PostJobTables { get; set; }
     }
 }

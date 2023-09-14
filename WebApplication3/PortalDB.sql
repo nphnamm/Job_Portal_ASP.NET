@@ -1,5 +1,6 @@
 CREATE DATABASE JobshuntDb;
-
+ 
+use JobshuntDb;
 --Company Table
 SET ANSI_NULLS ON
 GO

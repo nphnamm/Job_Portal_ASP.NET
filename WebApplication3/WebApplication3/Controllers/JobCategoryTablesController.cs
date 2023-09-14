@@ -17,6 +17,13 @@ namespace WebApplication3.Controllers
         // GET: JobCategoryTables
         public ActionResult Index()
         {
+           
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
+
             return View(db.JobCategoryTables.ToList());
         }
 
@@ -24,6 +31,11 @@ namespace WebApplication3.Controllers
         // GET: JobCategoryTables/Create
         public ActionResult Create()
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             return View();
         }
 
@@ -34,6 +46,11 @@ namespace WebApplication3.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create( JobCategoryTable jobCategoryTable)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (ModelState.IsValid)
             {
                 db.JobCategoryTables.Add(jobCategoryTable);
@@ -47,6 +64,16 @@ namespace WebApplication3.Controllers
         // GET: JobCategoryTables/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -66,6 +93,11 @@ namespace WebApplication3.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit( JobCategoryTable jobCategoryTable)
         {
+            if (string.IsNullOrEmpty(Convert.ToString(Session["UserTypeID"])))
+            {
+
+                return RedirectToAction("Login", "Usrer");
+            }
             if (ModelState.IsValid)
             {
                 db.Entry(jobCategoryTable).State = EntityState.Modified;

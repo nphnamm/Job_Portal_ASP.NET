@@ -30,8 +30,8 @@ namespace DatabaseLayer
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CompanyTable> CompanyTables { get; set; }
+        public virtual UserTypeTable UserTypeTable { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PostJobTable> PostJobTables { get; set; }
-        public virtual UserTypeTable UserTypeTable { get; set; }
     }
 }

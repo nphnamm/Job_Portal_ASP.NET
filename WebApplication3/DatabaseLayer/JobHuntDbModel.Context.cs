@@ -28,11 +28,11 @@ namespace DatabaseLayer
         public virtual DbSet<CompanyTable> CompanyTables { get; set; }
         public virtual DbSet<JobCategoryTable> JobCategoryTables { get; set; }
         public virtual DbSet<JobNatureTable> JobNatureTables { get; set; }
-        public virtual DbSet<JobRequirementDetailTable> JobRequirementDetailTables { get; set; }
-        public virtual DbSet<JobRequirementsTable> JobRequirementsTables { get; set; }
         public virtual DbSet<JobStatusTable> JobStatusTables { get; set; }
-        public virtual DbSet<PostJobTable> PostJobTables { get; set; }
         public virtual DbSet<UserTable> UserTables { get; set; }
         public virtual DbSet<UserTypeTable> UserTypeTables { get; set; }
+        public virtual DbSet<JobRequirementDetailTable> JobRequirementDetailTables { get; set; }
+        public virtual DbSet<JobRequirementsTable> JobRequirementsTables { get; set; }
+        public virtual DbSet<PostJobTable> PostJobTables { get; set; }
     }
 }
